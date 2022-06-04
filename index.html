@@ -178,12 +178,45 @@
                         <li><a href="" class="footer-svg"><svg class="icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg></a></li>
                     </ul>
                 </div>
+                <div class="footer-form">
+                    <h3 class="network-title">Подпишитесь на рассылку</h3>
+                    <form action="" class="footer-form-box">                        
+                        <input class="footer-email" type="email" name="email" required placeholder="E-mail" />
+                        <button class="footer-subscrib" form="" type="submit">Подписаться<svg class="airplane">
+                            <use href="./images/symbol-defs.svg#airplane"></use>
+                        </svg></button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close" data-modal-close><svg class="close-svg"><use href="./images/symbol-defs.svg#close"></use></svg></button>
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>            
+                <div class="modal-form">
+                    <input class="modal-input" name="text" type="text" id="name" required placeholder=" ">
+                        <label class="modal-item" for="name">Имя</label>
+                        <svg class="form-svg"><use href="./images/symbol-defs.svg#name"></use></svg>
+                    </input>
+                </div>
+                <div class="modal-form">
+                    <input class="modal-input" name="tel" type="tel" id="telephone" required placeholder=" ">
+                        <label class="modal-item" for="telephone">Телефон</label>
+                        <svg class="form-svg"><use href="./images/symbol-defs.svg#telephone"></use></svg>
+                    </input>
+                </div>
+                <div class="modal-form">
+                    <input class="modal-input" name="email" type="email" id="envelope-modal" required placeholder=" ">
+                        <label class="modal-item" for="envelope-modal">Почта</label>
+                        <svg class="form-svg"><use class="" href="./images/symbol-defs.svg#envelope-modal"></use></svg>
+                    </input>
+                </div>
+                <label class="textarea-item" for="comment">Комментарий</label>
+                <textarea class="textarea" name="text" id="comment" placeholder="Введите текст" resize></textarea>
+                <label class="checkbox-title"><input class="checkbox" name="" type="checkbox" required/><span class="checkbox-svg"></span>Соглашаюсь с рассылкой и принимаю<span class="treaty">Условия договора</span></label>                
+                <button class="modal-submit" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
