@@ -18,7 +18,7 @@
             <nav>
                 <a class="logo" href="./index.html">Web<span class="logo-accent">Studio</span></a>
                 <ul class="header-nav">
-                    <li class=""><a class="nav-page studio-page" href="./index.html" current="page">Студия</a></li>
+                    <li class=""><a class="nav-page studio-page current" href="./index.html">Студия</a></li>
                     <li class=""><a class="nav-page" href="./portfolio.html">Портфолио</a></li>
                     <li class=""><a class="nav-page" href="">Контакты</a></li>
                 </ul>
@@ -76,10 +76,10 @@
                     <li class="activity-card"><a href=""><img src="./images/computer.png" width="370" alt="компьютеры">
                         <div class="activity-card-title"><h3>Десктопные приложения</h3></div></a>
                     </li>
-                    <li class="activity-card"><a href=""><img src="./images/laptop.png" width="370" alt="ноутбуки"></a>
+                    <li class="activity-card"><a href=""><img src="./images/laptop.png" width="370" alt="ноутбуки">
                         <div class="activity-card-title"><h3>Мобильные приложения</h3></div></a>
                     </li>
-                    <li class="activity-card"><a href=""><img src="./images/tablet.png" width="370" alt="планшеты"></a>
+                    <li class="activity-card"><a href=""><img src="./images/tablet.png" width="370" alt="планшеты">
                         <div class="activity-card-title"><h3>Дизайнерские решения</h3></div></a>
                     </li>
                 </ul>
@@ -90,7 +90,7 @@
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-big-box">
-                    <li class="team-box"><img src="./images/employee1.jpg" width="270" alt="Игорь Демьяненко"></a>
+                    <li class="team-box"><img src="./images/employee1.jpg" width="270" alt="Игорь Демьяненко">
                     <div class="team-content">
                         <h3 class="team-box-title">Игорь Демьяненко</h3>
                         <p class="team-box-item" lang="en">Product Designer</p>
@@ -102,7 +102,7 @@
                         </ul>
                     </div>
                     </li>
-                    <li class="team-box"><img src="./images/employee2.jpg" width="270" alt="Ольга Репина"></a>
+                    <li class="team-box"><img src="./images/employee2.jpg" width="270" alt="Ольга Репина">
                     <div class="team-content">
                         <h3 class="team-box-title">Ольга Репина</h3>
                         <p class="team-box-item" lang="en">Frontend Developer</p>
@@ -114,7 +114,7 @@
                         </ul>
                     </div>
                     </li>
-                    <li class="team-box"><img src="./images/employee3.jpg" width="270" alt="Николай Тарасов"></a>
+                    <li class="team-box"><img src="./images/employee3.jpg" width="270" alt="Николай Тарасов">
                     <div class="team-content">
                         <h3 class="team-box-title">Николай Тарасов</h3>
                         <p class="team-box-item" lang="en">Marketing</p>
@@ -126,7 +126,7 @@
                         </ul>
                     </div>
                     </li>
-                    <li class="team-box"><img src="./images/employee4.jpg" width="270" alt="Михаил Ермаков"></a>
+                    <li class="team-box"><img src="./images/employee4.jpg" width="270" alt="Михаил Ермаков">
                     <div class="team-content">
                         <h3 class="team-box-title">Михаил Ермаков</h3>
                         <p class="team-box-item" lang="en">UI Designer</p>
@@ -156,7 +156,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="container">
             <div class="footer-box">
                 <div class="footer-address">
@@ -171,7 +171,7 @@
                 </div>
                 <div class="footer-network">
                     <h3 class="network-title">присоединяйтесь</h3>
-                    <ul class="team-network">
+                    <ul class="team-network-footer">
                         <li><a href="" class="footer-svg"><svg class="icon"><use href="./images/symbol-defs.svg#instagram"></use></svg></a></li>
                         <li><a href="" class="footer-svg"><svg class="icon"><use href="./images/symbol-defs.svg#twitter"></use></svg></a></li>
                         <li><a href="" class="footer-svg"><svg class="icon"><use href="./images/symbol-defs.svg#facebook"></use></svg></a></li>
@@ -180,9 +180,9 @@
                 </div>
                 <div class="footer-form">
                     <h3 class="network-title">Подпишитесь на рассылку</h3>
-                    <form action="" class="footer-form-box">                        
-                        <input class="footer-email" type="email" name="email" required placeholder="E-mail" />
-                        <button class="footer-subscrib" form="" type="submit">Подписаться<svg class="airplane">
+                    <form class="footer-form-box">
+                        <input class="footer-email" type="email" name="email" required placeholder="E-mail"/>
+                        <button class="footer-subscrib" type="submit">Подписаться<svg class="airplane">
                             <use href="./images/symbol-defs.svg#airplane"></use>
                         </svg></button>
                     </form>
@@ -192,29 +192,29 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-close" data-modal-close><svg class="close-svg"><use href="./images/symbol-defs.svg#close"></use></svg></button>
-            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>            
+            <form>
+                <button class="modal-close" data-modal-close><svg class="close-svg"><use href="./images/symbol-defs.svg#close"></use></svg></button>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 <div class="modal-form">
-                    <input class="modal-input" name="text" type="text" id="name" required placeholder=" ">
+                    <input class="modal-input" name="text" type="text" id="name" required placeholder=" "/>
                         <label class="modal-item" for="name">Имя</label>
                         <svg class="form-svg"><use href="./images/symbol-defs.svg#name"></use></svg>
-                    </input>
                 </div>
                 <div class="modal-form">
-                    <input class="modal-input" name="tel" type="tel" id="telephone" required placeholder=" ">
+                    <input class="modal-input" name="tel" type="tel" id="telephone" required placeholder=" "/>
                         <label class="modal-item" for="telephone">Телефон</label>
                         <svg class="form-svg"><use href="./images/symbol-defs.svg#telephone"></use></svg>
-                    </input>
                 </div>
                 <div class="modal-form">
-                    <input class="modal-input" name="email" type="email" id="envelope-modal" required placeholder=" ">
+                    <input class="modal-input" name="email" type="email" id="envelope-modal" required placeholder=" "/>
                         <label class="modal-item" for="envelope-modal">Почта</label>
                         <svg class="form-svg"><use class="" href="./images/symbol-defs.svg#envelope-modal"></use></svg>
-                    </input>
                 </div>
-                <label class="textarea-item" for="comment">Комментарий</label>
-                <textarea class="textarea" name="text" id="comment" placeholder="Введите текст" resize></textarea>
-                <label class="checkbox-title"><input class="checkbox" name="" type="checkbox" required/><span class="checkbox-svg"></span>Соглашаюсь с рассылкой и принимаю<span class="treaty">Условия договора</span></label>                
+                <div class="textarea">
+                    <label class="textarea-item" for="comment">Комментарий</label>
+                    <textarea name="text" id="comment" placeholder="Введите текст"></textarea>
+                </div>                
+                <label class="checkbox-title"><input class="checkbox" name="checkbox" type="checkbox" required/><span class="checkbox-svg"></span>Соглашаюсь с рассылкой и принимаю<span class="treaty">Условия договора</span></label>
                 <button class="modal-submit" type="submit">Отправить</button>
             </form>
         </div>

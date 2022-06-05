@@ -137,7 +137,7 @@ nav {
     top: 45px;
 }
 
-[current] {
+.current {
     color: var(--accent-text-color);
 }
 
@@ -504,7 +504,7 @@ nav {
 }
 
 /*подвал*/
-.footer {
+footer {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -574,14 +574,21 @@ nav {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-right: 154px;
+    
 }
 
 .team-network {
     display: flex;
     width: 206px;
     justify-content: space-between;
-    margin-left: 0;    
+    margin: auto;    
+}
+
+.team-network-footer {
+    display: flex;
+    width: 206px;
+    justify-content: space-between;
+    margin-left: 0; 
 }
 
 .footer-svg {
@@ -603,9 +610,13 @@ nav {
     background-color: var(--accent-text-color);
 }
 
+.footer-form {
+    margin-left: 93px;
+}
+
 .footer-form-box {
     display: flex;
-    height: 50px;    
+    height: 50px;   
 }
 
 .footer-email {
@@ -641,6 +652,8 @@ nav {
     background: var(--accent-text-color);    
     border-radius: 4px;
     border-color:  transparent;
+
+    cursor: pointer;
 
     display: flex;
     align-items: center;
@@ -701,6 +714,7 @@ nav {
 .modal-close {
     display: block;
     position: absolute;
+    cursor: pointer;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -725,6 +739,7 @@ letter-spacing: 0.03em;
 
 color: #212121;
 text-align: center;
+margin-bottom: 30px;
 }
 
 .modal-form {
@@ -732,7 +747,7 @@ text-align: center;
     position: relative;
     width: 100%;
     height: 40px;
-    margin-top: 30px;
+    margin-bottom: 28px;
 }
 
 input, textarea {
@@ -799,6 +814,7 @@ input, textarea {
     fill: var(--accent-text-color);    
 }
 
+
 .textarea {
     display: block;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -806,21 +822,27 @@ input, textarea {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
-    resize: none;
+    
+    position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
+textarea {
+    resize: none;
+}
+
 .textarea-item {
     display: block;
+    position: absolute;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
 
     color: #757575;
-    margin-top: 10px;
-    margin-bottom: 4px;
+    top: -18px;
+    left: 0;    
 }
 
 .checkbox-title {
@@ -843,8 +865,8 @@ input, textarea {
 .checkbox-svg {
     display: inline-block;
     content: "";
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 15px;
     border: 1px solid #212121;
     border-radius: 2px;
     
@@ -871,7 +893,7 @@ input, textarea {
     display: block;
     width: 200px;
     height: 50px;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     
     cursor: pointer;
 
